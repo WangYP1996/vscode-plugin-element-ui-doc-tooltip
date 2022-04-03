@@ -1,0 +1,79 @@
+{
+	"name": "element-ui-doc-tooltip",
+	"displayName": "element-ui-doc-tooltip",
+	"description": "帮助用户快速查看element-ui组件相关内容的Vscode插件",
+	"version": "0.0.1",
+	"engines": {
+		"vscode": "^1.66.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"onLanguage:vue",
+		"onLanguage:html"
+	],
+	"main": "./dist/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "element-ui-doc-tooltip.setCustomLabel",
+				"title": "设置自定义标签"
+			},
+			{
+				"command": "element-ui-doc-tooltip.getComponentDoc",
+				"title": "直接查看组件文档"
+			}
+		],
+		"configuration": {
+			"type": "Object",
+			"title": "element-ui 提示工具配置",
+			"properties": {
+				"element-ui-doc-tooltip.component-prefix": {
+					"type": "string",
+					"default": "el",
+					"description": "element-ui组件的标签前缀，默认为el，如input组件的标签为el-input"
+				},
+				"element-ui-doc-tooltip.doc-language": {
+					"type": "string",
+					"default": "zh-CN",
+					"description": "提示文本的语言类型，默认为简体中文"
+				},
+				"element-ui-doc-tooltip.complex-hover-doc": {
+					"type": "boolean",
+					"default": false,
+					"description": "是否在悬浮提示框上展示完整文档，默认为否"
+				}
+			}
+		}
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run package",
+		"compile": "webpack",
+		"watch": "webpack --watch",
+		"package": "webpack --mode production --devtool hidden-source-map",
+		"compile-tests": "tsc -p . --outDir out",
+		"watch-tests": "tsc -p . -w --outDir out",
+		"pretest": "npm run compile-tests && npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.2.0",
+		"@types/marked": "^4.0.3",
+		"@types/mocha": "^9.0.0",
+		"@types/node": "14.x",
+		"@types/vscode": "^1.66.0",
+		"@typescript-eslint/eslint-plugin": "^5.9.1",
+		"@typescript-eslint/parser": "^5.9.1",
+		"@vscode/test-electron": "^2.0.3",
+		"eslint": "^8.6.0",
+		"glob": "^7.2.0",
+		"marked": "^4.0.12",
+		"mocha": "^9.1.3",
+		"ts-loader": "^9.2.6",
+		"typescript": "^4.5.4",
+		"webpack": "^5.66.0",
+		"webpack-cli": "^4.9.1"
+	}
+}
