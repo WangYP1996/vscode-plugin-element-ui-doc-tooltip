@@ -8,31 +8,31 @@
 
 将鼠标悬浮在符合命名规范的组件上，可以看到可选的属性值，可以通过设置将悬浮框内容改变为完整的文档
 
-![Hover](/assets/hover.gif)
+![Hover](https://github.com/WangYP1996/vscode-plugin-element-ui-doc-tooltip/raw/master/assets/hover.gif)
 
 ### 查看组件详细文档
 
 点击查看更多按钮，将在侧边打开包含属性详细说明的Webview面板，并自动跳转到相应位置
 
-![viewMore](/assets/viewMoreDoc.gif)
+![viewMore](https://github.com/WangYP1996/vscode-plugin-element-ui-doc-tooltip/blob/master/assets/viewMoreDoc.gif)
 
 ### 组件属性值补全
 
 提供相关组件的attr、events、slot补全
 
-![completion](/assets/completion.gif)
+![completion](https://github.com/WangYP1996/vscode-plugin-element-ui-doc-tooltip/raw/master/assets/completion.gif)
 
 ### 设置自定义组件label
 
 针对部分组件中对element-ui组件的重定义，支持自定义组件前缀的输入，可以同时匹配多种前缀
 
-![setcustomlabel](/assets/setcustomlabel.gif)
+![setcustomlabel](https://github.com/WangYP1996/vscode-plugin-element-ui-doc-tooltip/raw/master/assets/setcustomlabel.gif)
 
 ### 直接查看组件文档
 
 不需要悬浮组件直接进入文档详情
 
-![getdoc](/assets/getdoc.gif)
+![getdoc](https://github.com/WangYP1996/vscode-plugin-element-ui-doc-tooltip/raw/master/assets/getdoc.gif)
 
 ## Requirements
 

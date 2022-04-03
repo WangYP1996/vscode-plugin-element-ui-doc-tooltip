@@ -2,7 +2,8 @@
 	"name": "element-ui-doc-tooltip",
 	"displayName": "element-ui-doc-tooltip",
 	"description": "帮助用户快速查看element-ui组件相关内容的Vscode插件",
-	"version": "0.0.1",
+	"version": "1.0.0",
+    "publisher": "wangyiping1996",
 	"engines": {
 		"vscode": "^1.66.0"
 	},
